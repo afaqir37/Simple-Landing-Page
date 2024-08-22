@@ -4,7 +4,8 @@
 
 
 .container {
-	padding: 0px 400px;
+	height: 100px;
+	padding: 0px 10%;
 	background-color: #1F2937;
 	display: flex;
 	justify-content: space-between;
@@ -13,21 +14,112 @@
 
 .nav {
 	display: flex;
-	margin-right: 10px;
-	gap: 16px;
+	gap: 42px;
 }
 
 a {
-	color: white;
-	text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  display: inline-block;
+  transition: transform 0.3s;
 }
 
+
+a:hover {
+  transform: scale(1.07);
+}
 .logo img {
-	width: 110px;
-	height: auto;
+	width: 100px;
+	object-fit: contain;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.dark main {
+	background-color: #1F2937;
+	display: flex;	
+	justify-content: space-between;
+	padding: 100px 10%;
+	color: white;
+	gap: 55px;
+}
+
+main img {
+	width: 900px;
+	object-fit: contain;
+}
+
+.description {
+	width: 800px;
+}
+
+.description h1 {
+	font-size: 48px;
+	color: #F9FAF8;
+	font-weight: 800;
+}
+
+.description p {
+	font-size: 18px;
+	color: #E5E7EB;
+}
+
+.button-container button {
+  font: inherit;
+  background-color: #f0f0f0;
+  border: 0;
+  color: #242424;
+  border-radius: 0.5em;
+  font-size: 1.35rem;
+  padding: 0.375em 1em;
+  font-weight: 600;
+  text-shadow: 0 0.0625em 0 #fff;
+  box-shadow: inset 0 0.0625em 0 0 #f4f4f4, 0 0.0625em 0 0 #efefef,
+    0 0.125em 0 0 #ececec, 0 0.25em 0 0 #e0e0e0, 0 0.3125em 0 0 #dedede,
+    0 0.375em 0 0 #dcdcdc, 0 0.425em 0 0 #cacaca, 0 0.425em 0.5em 0 #cecece;
+  transition: 0.15s ease;
+  cursor: pointer;
+}
+
+.button-container button:active {
+  translate: 0 0.225em;
+  box-shadow: inset 0 0.03em 0 0 #f4f4f4, 0 0.03em 0 0 #efefef,
+    0 0.0625em 0 0 #ececec, 0 0.125em 0 0 #e0e0e0, 0 0.125em 0 0 #dedede,
+    0 0.2em 0 0 #dcdcdc, 0 0.225em 0 0 #cacaca, 0 0.225em 0.375em 0 #cecece;
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fancy {
+  position: relative;
+  white-space: nowrap;
+  &:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
+}
+
+
+
+
+
+
 
 

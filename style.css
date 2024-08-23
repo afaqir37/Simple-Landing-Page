@@ -1,6 +1,8 @@
 
 * {
+	margin: 0;
 }
+
 
 
 .container {
@@ -55,6 +57,9 @@ main img {
 
 .description {
 	width: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
 }
 
 .description h1 {
@@ -116,8 +121,36 @@ main img {
   }
 }
 
+.pattern {
+	width: 300px;
+}
 
+.pattern img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 33px;
+}
 
+.white-part {
+	text-align: center;
+	padding: 5% 20% 10%;
+}
+
+.white-part h1 {
+	color: #1F2937;
+	font-size: 36px;
+	font-weight: 800;
+}
+
+.collection {
+	display: flex;
+	margin-top: 80px;
+	justify-content: center;
+	gap: 40px;
+	
+
+}
 
 
 
